@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+:root {
+  /* bg colors */
+  --background: linear-gradient(180deg, #c4c4c4 0%, #f7e9e9 100%);
+  --primary: #353636;
+  --secondary: #636363;
+  --btn-bg: #3f60f3;
+  --bg-white: #fff;
+  --nav-bg: #307ae9;
+  --btn-green: #126850;
+
+  /* Text colors */
+  --text-gray: #8c8e8f;
+  --text-white: #f3f4f6;
+  --text-blue: #1c51bb;
+
+  /* Decoration */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', 'Poppins';
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* header */
+
+header {
+  background: linear-gradient(180deg, #dddddd 0%, #f5f5f5 100%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0px 40px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 600px;
+}
+
+.navbar-list {
+  gap: 40px;
+}
+
+.navbar label i {
+  font-size: 18px;
+  padding: 8px 10px;
+  color: #202020;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  border: 1.5px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.navbar-list a {
+  color: var(--text-blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-list li:last-child > a {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/*Ocultar/mostrar carrito*/
+
+#cart-toggle,
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+#cart-toggle:checked + .cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+/* main */
+
+main {
+  background: linear-gradient(180deg, #585858 0%, #464646 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  padding: 220px 0px;
+}
+
+/* Contacto */
+
+.formulario-contacto {
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  gap: 12px;
+}
+
+.formulario-contacto h3 {
+  color: var(--text-blue);
+}
+
+.formulario-contacto input {
+  border: unset;
+  border-radius: 5px;
+}
+
+.usuario-recordar {
+  padding: 5px 0px 10px 0px;
+  font-size: 12px;
+}
+
+.usuario-recordar h4 {
+  font-weight: 300;
+}
+
+.formulario-contacto button {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #3f60f3;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.formulario-contacto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.formulario-contacto p a {
+  color: #3f60f3;
+}
+
+/* footer */
+
+footer {
+  background: var(--background);
+  color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 100px;
+}
+
+footer a,
+footer p {
+  color: var(--primary);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.redes-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(90deg, #1f1f1f 0%, #585858 100%);
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.redes-info i {
+  font-size: 30px;
+  padding: 0px 5px;
+}
+
+footer span a {
+  font-weight: 800;
+  color: var(--text-blue);
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

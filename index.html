@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>petPAL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/img/logo.png" alt="Logo de petPAL" class="logo" />
+      <!-- NavBar  -->
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars" class="menu-icon"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Servicios">Servicios</a></li>
+          <li><a href="#Adopta">Adopta</a></li>
+          <li><a href="#petfood">petFOOD</a></li>
+          <li><a href="#aboutus" target="_blank">Nuestra historia</a></li>
+          <li>
+            <a href="./login.html" target="_blank"
+              ><i class="fa-solid fa-user"></i> Ingresa</a
+            >
+          </li>
+        </ul>
+        <!-- Fin NavBar  -->
+
+        <!-- Carrito de compras  -->
+        <label for="cart-toggle" class="cart-label">
+          <i class="fa-solid fa-bowl-food"></i>
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h2>Tu petCOMPRA</h2>
+          <div class="cart-item">
+            <img
+              src="./assets/img/productos/dieta-BARF.jpg"
+              alt="Imagen de Dieta BARF"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Dieta BARF</h3>
+              <p class="item-bid">Semanal</p>
+              <span class="item-price">$6.999</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="item-quantity"> 1 </span>
+              <span class="quantity-handler up"> + </span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/productos/dieta-perro2.jpg"
+              alt="Imagen de Perro Alimentandose Balanceado"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Balanceado</h3>
+              <p class="item-bid">Bolsa 20kg.</p>
+              <span class="item-price">$12.999</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="item-quantity"> 1 </span>
+              <span class="quantity-handler up"> + </span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/productos/dieta-perro.jpg"
+              alt="Imagen de Perro Alimentandose"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Snacks</h3>
+              <p class="item-bid">Bolsa 1kg.</p>
+              <span class="item-price">$2.999</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="item-quantity"> 1 </span>
+              <span class="quantity-handler up"> + </span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/productos/perro-paseando2.jpg"
+              alt="Imagen de Perro paseando"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Paseo</h3>
+              <p class="item-bid">Paseo diario</p>
+              <span class="item-price">$1500</span>
+            </div>
+            <div class="item-handler">
+              <span class="quantity-handler down"> - </span>
+              <span class="item-quantity"> 1 </span>
+              <span class="quantity-handler up"> + </span>
+            </div>
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$24.500</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
+        <div class="overlay"></div>
+        <!-- Fin del carrito de compras -->
+      </nav>
+    </header>
+    <main>
+      <!-- portada -->
+      <section id="portada">
+        <div class="portada-info">
+          <h1>Tu perro es parte de <span>NUESTRA</span> familia.</h1>
+          <p>
+            En petPAL amamos a los animales y sabemos que vos tambien, por eso
+            te ofrecemos un lugar donde puedas encontrar todo lo necesario para
+            que ellos y vos esten tranquilos
+            <span>SIEMPRE.</span>
+          </p>
+          <a href="#"
+            >Unite
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </a>
+        </div>
+        <div class="perro-portada">
+          <img
+            src="./assets/img/principal/perro-principal.jpg"
+            alt="Perro Feliz"
+            class="perro-portada-img"
+          />
+        </div>
+      </section>
+
+      <section id="info">
+        <h2>Que podes hacer con <span>nosotros</span></h2>
+        <p class="texto-info">
+          Podemos ofrecerte un monton de soluciones para nuestros mejores
+          amigos. Entre los servicios que contamos, podes elegir un plan de
+          alimentacion <span>especialmente indicado para cada perro</span>, o
+          podes tambien incluir un seguro de salud.
+        </p>
+        <div class="info-servicios-container">
+          <div class="info-servicios-card">
+            <i class="fa-solid fa-bowl-food"></i>
+            <h3>Menu semanal personalizado</h3>
+            <p>
+              Contamos con personal apto para armar una dieta balanceada de
+              manera personalizada para cada perro.
+            </p>
+          </div>
+          <div class="info-servicios-card">
+            <i class="fa-solid fa-house-medical"></i>
+            <h3>Servicio Medico 24hs.</h3>
+            <p>
+              Cualquier dia, a cualquier hora vas a poder contar con nuestro
+              servicio de atencion medica, su bienestar es nuestro comporomiso.
+            </p>
+          </div>
+          <div class="info-servicios-card">
+            <i class="fa-solid fa-dog"></i>
+            <h3>Servicio paseo diario</h3>
+            <p>
+              Es de vital importancia que tu mascota un paseo diario... Por eso,
+              contamos con varios servicios disponibles para cada necesidad.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="discover">
+        <div class="discover-perro-img">
+          <img
+            src="./assets/img/discover/pexels-photo-551628.webp"
+            alt="yoda"
+          />
+        </div>
+        <div class="discover-info">
+          <h2>Adopta y cambiale la vida a uno de ellos! 🐶</h2>
+          <p>
+            Sabias que en petPAL podes aplicar para adoptar un perrit@ sin
+            hogar?... pensalo ellos te cambian la vida a vos y vos a ellos, win
+            win absoluto!
+          </p>
+          <a href="#">Aplica ahora</a>
+        </div>
+      </section>
+      <!-- Productos -->
+      <section id="menu-dog">
+        <h2>Conoce Nuestros Planes</h2>
+        <div class="products-container">
+          <!-- product 1-->
+          <div class="product">
+            <img
+              src="./assets/img/productos/dieta-BARF.jpg"
+              alt="Dieta BARF"
+              class="foto-productos"
+            />
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Dieta BARF</h3>
+                <p>Plan 7 dias</p>
+              </div>
+              <div class="producto-bajo">
+                <p>$8.999</p>
+                <span>$6.999</span>
+                <button class="btn-agregar">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 2-->
+          <div class="product">
+            <img
+              src="./assets/img/productos/dieta-perro.jpg"
+              alt="Imagen Snakcs"
+              class="foto-productos"
+            />
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Snacks</h3>
+                <p>2u. Por dia</p>
+              </div>
+              <div class="producto-bajo">
+                <p>$3.999</p>
+                <span>$2.999</span>
+                <button class="btn-agregar">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 3 -->
+
+          <div class="product">
+            <img
+              src="./assets/img/productos/dieta-perro2.jpg"
+              alt="Imagen alimento balanceado"
+              class="foto-productos"
+            />
+            <div class="product-info">
+              <div class="product-top">
+                <h3>Dieta Balanceada</h3>
+                <p>Plan quincenal</p>
+              </div>
+              <div class="producto-bajo">
+                <p>$8.999</p>
+                <span>$6.999</span>
+                <button class="btn-agregar">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-load">Ver Más</button>
+      </section>
+
+      <!-- Fin Productos -->
+
+      <!-- Contacto -->
+      <section class="contacto-info">
+        <div class="contacto-info-texto">
+          <h2>Contactanos</h2>
+          <h3><i class="fa-solid fa-phone"></i> +54 11 38 45 62 68</h3>
+          <p><i class="fa-brands fa-instagram"></i> @petpal</p>
+          <p><i class="fa-solid fa-globe"></i> www.petpal.com.ar</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Pedro Lozano 1111, CABA.
+          </p>
+          <div class="medios-de-pago">
+            <h2>Medios de pago</h2>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-google-pay"></i>
+          </div>
+        </div>
+        <form class="formulario-contacto" action="">
+          <h3>Envianos tu consulta</h3>
+          <div class="form-datos">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="ej: Lewis"
+              name="nombre"
+              required
+            />
+          </div>
+          <div class="form-datos">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              placeholder="ej: Hamilton"
+              name="apellido"
+              required
+            />
+          </div>
+          <div class="form-datos">
+            <label for="mail">Mail</label>
+            <input
+              type="mail"
+              id="mail"
+              placeholder="ej: hola@petpal.com.ar"
+              name="mail"
+              required
+            />
+          </div>
+          <div class="form-datos"
+            <label for="nombre">Consulta</label>
+            <textarea
+              name="consulta"
+              id="consulta"
+              rows="2"
+              placeholder="Ingrese su consulta..."
+            ></textarea>
+          </div>
+          <button>ENVIAR</button>
+        </form>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7161.766831908858!2d-58.530947476960705!3d-34.61214549710298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d7332684cd%3A0xd9ee55bbdfa6c539!2sDevoto%20Shopping!5e0!3m2!1ses!2sar!4v1669042923904!5m2!1ses!2sar"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <!-- Fin Contacto -->
+    <footer>
+      <div>
+        <ul class="footer-links">
+          <li><a href="#"> Términos de Uso</a></li>
+          <li><a href="#"> Contactar </a></li>
+          <li><a href="#"> Quienes somos </a></li>
+        </ul>
+      </div>
+      <div class="redes-info">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-reddit"></i>
+        <i class="fa-brands fa-twitch"></i>
+      </div>
+      <p>Pagina realizada por <span>Ger Alvarez</span></p>
+    </footer>
+  </body>
+</html>

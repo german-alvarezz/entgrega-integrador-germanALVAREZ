@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>petPAL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo-link"><img src="./assets/img/logo.png" alt="Logo de petPAL"/></a>
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars" class="menu-icon"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Servicios">Servicios</a></li>
+          <li><a href="#Adopta">Adopta</a></li>
+          <li><a href="#petfood">petFOOD</a></li>
+          <li><a href="#aboutus" target="_blank">Nuestra historia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacto-info">        
+        </div>
+        <form class="formulario-contacto" action="">
+          <h3>Ingrese a su cuenta</h3>
+          <label for="usuario">Nombre de usuario</label>
+          <input
+            type="text"
+            id="usuario"
+            placeholder="Ingrese su usuario o mail registrado"
+            name="usuario"
+            required
+          />
+          <label for="contraseña">Contraseña</label>
+          <input
+            type="password"
+            id="contraseña"
+            placeholder="Ingrese su contraseña"
+            name="contraseña"
+            required
+          />
+          <label for="contraseña2">Repita su contraseña</label>
+          <input
+            type="password"
+            id="contraseña2"
+            placeholder="Repita su contraseña"
+            name="contraseña2"
+            required
+          />
+          <div class="usuario-recordar">
+            <label for="recordar">Recordar Contraseña</label>
+            <input type="checkbox" id="recordar" name="recordar">
+            <h4>Olvido su Contraseña?</h4>
+          </div>   
+          <button>LOGIN</button>
+          <p>Si no esta registrado por favor,<a href="register.html">Ingrese aqui.</a></p>
+        </form>        
+      </section>
+    </main>
+    <footer>
+      <div>
+        <ul class="footer-links">
+          <li><a href="#"> Términos de Uso</a></li>
+          <li><a href="#"> Contactar </a></li>
+          <li><a href="#"> Quienes somos </a></li>
+        </ul>
+      </div>
+      <div class="redes-info">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-reddit"></i>
+        <i class="fa-brands fa-twitch"></i>
+      </div>
+      <p>Pagina realizada por <span><a href="https://www.instagram.com/ger.alvarezz/" target="_blank">Ger Alvarez</a></span></p>
+    </footer>
+  </body>
+</html>
