@@ -44,6 +44,10 @@ header {
   z-index: 2;
 }
 
+header a img {
+  height: 50px;
+}
+
 .navbar,
 .navbar-list {
   display: flex;
@@ -73,11 +77,6 @@ header {
   color: var(--text-blue);
   font-size: 14px;
   font-weight: 700;
-}
-
-.navbar-list li:last-child > a {
-  color: var(--primary);
-  font-weight: 800;
 }
 
 /*Ocultar/mostrar carrito*/

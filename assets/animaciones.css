@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 65px;
+  scroll-padding-top: 70px;
 }
 
 .overlay {
@@ -34,7 +34,7 @@ html {
   content: '';
   height: 2px;
   width: 100%;
-  background: rgb(22, 22, 22);
+  background: linear-gradient(to right, #373b44, #4286f4);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -77,6 +77,11 @@ html {
 .portada-info a:hover {
   background-color: var(--fire);
   transition: all 0.2s ease-in;
+}
+
+.btn-add:hover {
+  border-color: var(--electric);
+  transition: all 0.15s ease-out;
 }
 
 .btn-load {
@@ -140,7 +145,8 @@ html {
   animation-delay: 0.2s;
 }
 
-#info h2 {
+#info h2,
+#info h2 span {
   opacity: 0;
   animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
   animation-delay: 0.4s;
@@ -169,55 +175,33 @@ html {
   animation-delay: 1s;
 }
 
-.product img {
+.info-servicios-card i:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.04);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.discover-perro-img {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 1.5s;
+}
+
+.product {
   transition: all 0.3s linear;
 }
 
-.product img:hover {
+.product:hover {
   transition: all 0.3s linear;
   transform: scale(1.02);
-}
-
-@keyframes blink {
-  to {
-    background: transparent;
-    opacity: 0;
-  }
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
-.hero-info h1 span {
-  position: relative;
-  background: linear-gradient(to top, #30cfd0, #c43ad6);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  z-index: 1;
-}
-
-.hero-info h1 span::before,
-.hero-info h1 span::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.hero-info h1 span::before {
-  background-color: var(--background);
-  animation: typewriter 1.2s 1.4s steps(6) forwards;
-}
-
-.hero-info h1 span::after {
-  width: 0.1rem;
-  background: linear-gradient(to top, #30cfd0, #c43ad6);
-  animation: typewriter 1.2s 1.4s steps(6) forwards,
-    blink 0.8s steps(6) infinite;
 }

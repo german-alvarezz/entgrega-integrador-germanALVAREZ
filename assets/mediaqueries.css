@@ -45,7 +45,7 @@
     display: flex;
   }
 
-  .hero-info {
+  .portada-info {
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -53,16 +53,16 @@
     gap: 30px;
   }
 
-  .hero-info h1 {
+  .portada-info h1 {
     width: 90%;
     max-width: 500px;
     min-width: unset;
   }
-  .hero-info p {
+  .portada-info p {
     width: 60%;
     max-width: 600px;
   }
-  .hero-card {
+  .perro-portada {
     display: none;
   }
 
@@ -71,7 +71,11 @@
     width: 80%;
   }
 
-  .info-cards-container {
+  #info .texto-info {
+    display: none;
+  }
+
+  .info-servicios-container {
     max-width: 80%;
   }
 
@@ -81,6 +85,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 20px;
+  }
+
+  #discover h2 {
+    text-align: center;
+  }
+
+  .discover-perro-img {
+    width: 90%;
   }
 
   .discover-info {
@@ -88,21 +101,22 @@
     align-items: center;
   }
 
-  .discover-cards {
-    flex-direction: column;
+  .discover-info p {
+    text-align: center;
   }
 
-  .discover-cards img {
-    width: 100%;
+  .contacto-info {
+    justify-content: space-around;
+    padding: 30px 30px;
   }
 
-  .categories {
-    flex-wrap: wrap;
-    max-width: 390px;
+  .contacto-info iframe {
+    height: 250px;
+    width: 400px;
   }
 
-  .category {
-    width: 120px;
+  .formulario-contacto {
+    display: none;
   }
 }
 
@@ -117,18 +131,25 @@
     flex-wrap: wrap;
   }
 
-  .hero-info p {
+  .portada-info p {
     width: 70%;
     max-width: unset;
+    text-align: center;
   }
 
-  .info-card {
+  #info h2,
+  #info h2 span {
+    font-size: 30px;
+    text-shadow: none;
+  }
+
+  .info-servicios-card {
     width: 100%;
     height: 350px;
     justify-content: center;
   }
 
-  .info-card p {
+  .info-servicios-card p {
     width: 90%;
   }
 
@@ -136,30 +157,31 @@
     width: 80%;
   }
   #discover h2 {
-    font-size: 48px;
+    font-size: 30px;
     width: 100%;
   }
 
-  .discover-text a {
-    font-size: 20px;
+  .discover-perro-img {
+    width: 600px;
   }
 
-  .discover-cards {
-    gap: 20px;
-  }
-
-  .categories {
-    max-width: 300px;
-    justify-content: center;
-    align-items: center;
+  #menu-dog h2 {
+    font-size: 34px;
+    background-color: transparent;
+    color: rgb(23, 56, 128);
   }
 
   .products-container {
-    width: 80%;
+    width: 50%;
   }
 
-  .product {
-    width: 100%;
+  .contacto-info {
+    justify-content: center;
+    padding: 30px 30px;
+  }
+
+  .contacto-info iframe {
+    display: none;
   }
 
   .footer-links {
